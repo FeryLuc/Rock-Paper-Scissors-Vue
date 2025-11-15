@@ -1,7 +1,15 @@
-<script setup></script>
+<script setup>
+import GameTitle from './components/gameTitle.vue';
+import GameResult from './components/gameResult.vue';
+import GameInterface from './components/gameInterface/GameInterface.vue';
+</script>
 
 <template>
-  <h1 class="text-3xl font-bold">Rock Paper Scissors</h1>
+  <section class="container mx-auto text-center mt-40">
+    <GameTitle />
+    <GameInterface />
+    <GameResult />
+  </section>
 </template>
 
 <style scoped></style>
